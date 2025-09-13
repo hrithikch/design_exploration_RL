@@ -17,14 +17,14 @@ It’s organized into clean modules (envs, RL, GUI) and run from a single entryp
 
 project-root/
 ├─ main.py
-├─ config.yaml # All settings go here
+├─ config. # All settings go here
 ├─ requirements.txt
 ├─ envs/
 │ ├─ init.py
 │ └─ surrogate_env.py # SurrogatePPAEnv: toy PPA formulas
 ├─ rl/
 │ ├─ init.py
-│ ├─ config_loader.py # YAML load + defaults merging
+│ ├─ config_loader.py #  load + defaults merging
 │ ├─ env_factory.py # Imports env class from config (safe kwargs)
 │ ├─ pareto.py # Non-dominated filtering
 │ └─ train_worker.py # Training + sweep + CSV outputs
@@ -33,7 +33,7 @@ project-root/
 ├─ live_stats.py # Live training metrics window
 └─ final_plot.py # Final candidates + Pareto plot
 
-yaml
+
 Copy code
 
 ---
@@ -67,15 +67,15 @@ If you installed Python via the Microsoft Store and the Tkinter GUI doesn’t ap
 ### 4) Run
 powershell
 Copy code
-python main.py --config config.yaml
+python main.py --config config.
 A live stats window opens immediately.
 
 When training completes, a plot window opens (Pareto front).
 
 Outputs go to runs/YYYYMMDD_HHMMSS/.
 
-## Configuration (edit config.yaml)
-yaml
+## Configuration (edit config.)
+
 Copy code
 training:
   policy: "MlpPolicy"
@@ -133,7 +133,7 @@ GUI doesn’t open
 Verify your Python distribution includes Tkinter. The python.org installer does; some variants don’t.
 
 Unexpected keyword argument ‘a’ (or similar)
-Your env.params in config.yaml have keys the env’s __init__ doesn’t accept.
+Your env.params in config. have keys the env’s __init__ doesn’t accept.
 Remove those keys or add them to the class signature.
 
 Timesteps end at a different number than requested
