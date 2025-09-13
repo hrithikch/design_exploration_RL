@@ -36,7 +36,7 @@ project-root/
 
 Copy code
 
----
+
 
 ## Setup (Windows)
 
