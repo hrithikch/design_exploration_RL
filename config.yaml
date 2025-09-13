@@ -1,6 +1,6 @@
 training:
   policy: MlpPolicy
-  total_timesteps: 23500
+  total_timesteps: 25000
   n_steps: 64
   batch_size: 64
   learning_rate: 0.0003
@@ -8,8 +8,8 @@ training:
   seed: null
 
 env:
-  module: "envs.surrogate_env"    # python module path to import
-  class: "SurrogatePPAEnv"        # class name inside that module
+  module: "envs.ring_osc_env"    # python module path to import
+  class: "RingOscEnv"        # class name inside that module
   params:
     a: 1.0
     b: 1.0

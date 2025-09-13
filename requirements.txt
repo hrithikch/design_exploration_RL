@@ -1,0 +1,7 @@
+#requirements
+gymnasium
+stable-baselines3
+torch
+matplotlib
+pyyaml
+numpy

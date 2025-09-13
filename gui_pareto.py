@@ -1,4 +1,6 @@
 # gui_pareto.py
+# This can open an existing candidates.csv and pareto.csv
+# instead of waiting for a training run
 import tkinter as tk
 from tkinter import filedialog
 import csv, os
