@@ -5,7 +5,7 @@ It’s organized into clean modules (envs, RL, GUI) and run from a single entryp
 
 ---
 
-## 🧩 What you’ll see when it runs
+## What you’ll see when it runs
 
 - A **live stats window** (Tkinter) that shows training metrics (iterations, total timesteps, reward, loss, etc.).
 - When training finishes, a **plot window** with the **candidates** and the computed **Pareto front**.
@@ -13,7 +13,7 @@ It’s organized into clean modules (envs, RL, GUI) and run from a single entryp
 
 ---
 
-## 🗂️ Project Structure (overview)
+## Project Structure (overview)
 
 project-root/
 ├─ main.py
@@ -38,7 +38,7 @@ Copy code
 
 ---
 
-## 🖥️ Setup (Windows)
+## Setup (Windows)
 
 > Assumes you have **Python 3.9+** and **Git** installed. If PowerShell blocks script activation, see step 2b.
 
