@@ -51,7 +51,7 @@ powershell
 python -m venv .RL
 .RL\Scripts\Activate.ps1
 ```
-2b) If activation is blocked (PowerShell policy):
+>2b) If activation is blocked (PowerShell policy):
 
 powershell
 ```
