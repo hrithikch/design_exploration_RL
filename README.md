@@ -34,9 +34,7 @@ project-root/
 └─ final_plot.py # Final candidates + Pareto plot
 
 
-Copy code
-
-
+---
 
 ## Setup (Windows)
 
@@ -46,28 +44,32 @@ Copy code
 ```powershell
 git clone https://github.com/your-org/rl-ppa-demo.git
 cd rl-ppa-demo
+```
 ### 2) Create & activate a virtual environment
 powershell
-Copy code
-python -m venv .venv
-.venv\Scripts\Activate.ps1
+```
+python -m venv .RL
+.RL\Scripts\Activate.ps1
+```
 2b) If activation is blocked (PowerShell policy):
 
 powershell
-Copy code
+```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .venv\Scripts\Activate.ps1
+```
 ### 3) Install dependencies
 powershell
-Copy code
+```
 pip install --upgrade pip
 pip install -r requirements.txt
 If you installed Python via the Microsoft Store and the Tkinter GUI doesn’t appear, please install the python.org distribution instead. (Tkinter is included there by default.)
-
+```
 ### 4) Run
 powershell
-Copy code
+```
 python main.py --config config.
+```
 A live stats window opens immediately.
 
 When training completes, a plot window opens (Pareto front).
@@ -76,7 +78,7 @@ Outputs go to runs/YYYYMMDD_HHMMSS/.
 
 ## Configuration (edit config.)
 
-Copy code
+```
 training:
   policy: "MlpPolicy"
   total_timesteps: 20000   # increase for smoother results
@@ -115,7 +117,7 @@ gui:
 plot:
   figure_dpi: 120
   figure_size: [6.5, 4.3]
-
+```
 ## Outputs
 Inside runs/<timestamp>/ you’ll find:
 
