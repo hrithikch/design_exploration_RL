@@ -42,8 +42,8 @@ project-root/
 
 ### 1) Clone the repository
 ```powershell
-git clone https://github.com/rl-design-exploration.git
-cd rl-design-exploration 
+git clone https://github.com/design-exploration-rl.git
+cd design-exploration-rl
 ```
 ### 2) Create & activate a virtual environment
 powershell
