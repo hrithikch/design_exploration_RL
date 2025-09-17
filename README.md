@@ -42,8 +42,8 @@ project-root/
 
 ### 1) Clone the repository
 ```powershell
-git clone https://github.com/your-org/rl-ppa-demo.git
-cd rl-ppa-demo
+git clone https://github.com/rl-design-exploration.git
+cd rl-design-exploration 
 ```
 ### 2) Create & activate a virtual environment
 powershell
