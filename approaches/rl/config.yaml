@@ -1,0 +1,39 @@
+training:
+  policy: MlpPolicy
+  total_timesteps: 25000
+  n_steps: 64
+  batch_size: 64
+  learning_rate: 0.0003
+  gamma: 0.99
+  seed: null
+
+env:
+  module: "shared.envs.surrogate_env"    # python module path to import
+  class: "SurrogatePPAEnv"        # class name inside that module
+  params:
+    a: 1.0
+    b: 1.0
+    eps: 0.001
+    seed: null
+
+run:
+  root: runs
+
+log:
+  outputs: [csv]
+  precreate_progress_row: true
+  files:
+    progress: progress.csv
+    candidates: candidates.csv
+    pareto: pareto.csv
+
+sweep:
+  points: 61
+  grid: null
+
+gui:
+  refresh_ms: 500
+
+plot:
+  figure_dpi: 120
+  figure_size: [6.5, 4.3]

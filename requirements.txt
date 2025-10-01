@@ -1,7 +1,15 @@
-#requirements
+# Shared requirements
+torch>=2.2
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+pyyaml>=6.0.1
+
+# RL-specific requirements
 gymnasium
 stable-baselines3
-torch
-matplotlib
-pyyaml
-numpy
+
+# MOBO-specific requirements
+botorch>=0.10.0
+gpytorch>=1.13
+tqdm>=4.66

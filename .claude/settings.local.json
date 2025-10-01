@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.RLtest/Scripts/python.exe -c \"from botorch import samplers; print(dir(samplers))\")",
+      "Bash(.RLtest/Scripts/python.exe -c \"from botorch import sampling; print(dir(sampling))\")",
+      "Bash(.RLtest/Scripts/python.exe compare.py --scan-latest)",
+      "Bash(.RLtest/Scripts/python.exe run_comparison.py --quick)",
+      "Bash(.RLtest/Scripts/python.exe approaches/mobo/main.py)",
+      "Bash(.RLtest/Scripts/python.exe run_comparison.py --quick --mobo-only)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

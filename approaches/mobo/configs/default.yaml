@@ -1,0 +1,32 @@
+seed: 0
+budget:
+  init_evals: 12
+  batch_size: 4
+  max_iters: 8
+objectives: [power, delay]
+constraints:
+  - name: timing_ok
+    type: hard
+    expr: "slack >= 0"
+search_space:
+  size: {type: continuous, low: 0.1, high: 1.0}
+  vdd:  {type: continuous, low: 0.7, high: 1.1}
+model:
+  kind: gp_independent
+acquisition:
+  kind: qNEHVI
+optimizer:
+  restarts: 10
+  raw_samples: 128
+  q: 4
+  num_candidates: 4
+evaluator:
+  backend: toy_surrogate
+logging:
+  dir: runs
+  live_ui: false
+plots:
+  parallel_coords: false
+stop:
+  hv_plateau_window: 3
+  hv_delta_tol: 0.01
