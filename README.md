@@ -1,4 +1,4 @@
-# RL PPA Exploration — Proof of Concept
+# RL PPA Exploration 
 
 This project demonstrates how **reinforcement learning (RL)** can automatically explore trade-offs between **power** and **delay** in circuit design. It uses a **surrogate environment** (simple analytic model) and trains an RL agent (PPO) to learn a **Pareto curve** of optimal trade-offs.  
 It’s organized into clean modules (envs, RL, GUI) and run from a single entrypoint.
